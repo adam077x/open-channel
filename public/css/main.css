@@ -68,10 +68,13 @@ body {
 .post {
     width: max-content;
     padding: 0.5em;
+    width: 100%;
 }
 
 .post p {
     margin-top: 0;
+    word-wrap: break-word;
+    display: block;
 }
 
 hr {

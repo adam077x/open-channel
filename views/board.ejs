@@ -15,7 +15,7 @@
         <form class="postForm" action="/post/create_post" method="POST">
             <input type="number" name="boardId" value="<%= id %>" hidden>
             <div class="postInput"><label for="title">Title</label><br/><input minlength="1" maxlength="64" type="text" name="title" required></div>
-            <div class="postInput"><label for="text">Text</label><br/><textarea minlength="1" maxlength="255" name="text" cols="21" rows="5" required></textarea></div>
+            <div class="postInput"><label for="text">Text</label><br/><textarea minlength="1" maxlength="2048" name="text" cols="21" rows="5" required></textarea></div>
             <div class="postInput"><input type="submit" value="Create Post"></div>
         </form>
     </div>
