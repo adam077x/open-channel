@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Postboard</title>
+
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+<body>
+    <h1 class="title"><a href="/">OpenChannel</a></h1>
+
+    <div class="form-container">
+        <form class="postForm" action="/post/create_post" method="POST">
+            <input type="number" name="boardId" value="<%= id %>" hidden>
+            <div class="postInput"><label for="title">Title</label><br/><input minlength="1" maxlength="64" type="text" name="title" required></div>
+            <div class="postInput"><label for="text">Text</label><br/><textarea minlength="1" maxlength="255" name="text" cols="21" rows="5" required></textarea></div>
+            <div class="postInput"><input type="submit" value="Create Post"></div>
+        </form>
+    </div>
+
+    <div class="posts">
+        <% if(posts) { %>
+            <% posts.forEach(element => { %>
+            <hr>
+            <div class="post">
+                <h3><%= element.title %></h3>
+                <p><%= element.text %></p>
+                <div class="date"><%= element.createdAt %></div>
+            </div>
+            <% }) %>
+        <% } %>
+    </div>
+</body>
+</html>

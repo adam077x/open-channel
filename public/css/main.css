@@ -1,0 +1,108 @@
+body {
+    padding: 0;
+    margin: 0;
+
+    font-family: Arial, sans-serif;
+
+    background: rgb(137, 199, 137);
+}
+
+.board-container {
+    display: flex;
+    justify-content: center;
+
+    margin: 1em 0em;
+}
+
+.board-box {
+    width: 45em;
+
+    background: rgb(230, 230, 230);
+
+    border: black 1px solid;
+}
+
+.small-title {
+    background: rgb(104, 153, 104);
+    padding: 0.5em;
+
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.box-content {
+    padding: 1em;
+}
+
+.categories li a {
+    color: rgb(0, 0, 116);
+    text-decoration: none;
+}
+
+.categories li a:hover {
+    text-decoration: underline;
+}
+
+.categories li:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.categories {
+    margin: 0;
+    margin-right: 1em;
+    padding: 0em;
+    list-style-type: none;    
+    display: inline-table;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+.posts {
+    margin: 0em 1em;
+}
+
+.post {
+    width: max-content;
+    padding: 0.5em;
+}
+
+.post p {
+    margin-top: 0;
+}
+
+hr {
+    background: none;
+    color: none;
+    border-color: rgb(159, 238, 159);
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+}
+
+.title a:hover {
+    text-decoration: none;
+    color: rgb(44, 44, 44);
+}
+
+.postForm {
+    display: block;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.postInput {
+    display: block;
+}
+
+.post h3 {
+    margin-top: 0;
+}
