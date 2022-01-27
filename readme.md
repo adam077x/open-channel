@@ -5,4 +5,3 @@ Back End: NodeJS, Express, SQLite, Sequelize\
 Front End: JS, HTML, CSS
 
 ![Home Page](1.png)
-![Board](2.png)
